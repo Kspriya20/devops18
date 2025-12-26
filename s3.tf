@@ -22,3 +22,12 @@ versioning_configuration {
 status = "Enabled"
 }
 }
+
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "sonyypriya1122.monobucket"
+key = "prod/terraform.tfstate"
+}
+}
+
